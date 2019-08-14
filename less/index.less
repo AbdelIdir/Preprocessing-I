@@ -63,20 +63,73 @@ table, th, td {
 	border: 1px solid black;
 	
   }
+// breakpoints
 
+@mobileBreakpoint: 500px;
 
-@mobileBreakpoint: 550px;
+// font sizes for root
 @desktopRootFontSize: 100%;
 @mobileRootFontSize: 150%;
 
 
+// paddings
+@largePadding: 1rem;
+@smallPadding: 0.25rem;
+
+
+
+// mixins
+.flexco() {
+	display: flex;
+	flex-direction: column;
+
+  }
+  
+.flexro(){
+	display: flex;
+	flex-direction: row;
+}
+
+
+
+:root{
+	font-size: @desktopRootFontSize;
+
+	@media(max-width: @mobileBreakpoint){
+		font-size: @mobileRootFontSize;
+	}
+
+}
+
+
 
 .wrapper{
-	display:flex;
-	flex-direction: column;
+	
 	max-width: 800px;
 	margin: 0 auto;
 }
+
+.part.one{
+
+	background: #EAECEF;
+}
+
+.bar{
+	width:100%;
+	background-color: white;
+	.flexro();
+
+	.top{
+		width:2
+		
+		justify-content: flex-end;
+		width:100%;
+		justify-content: space-around;
+	}
+
+}
+
+
 
 .mypic img{
 	max-width: 200px;
