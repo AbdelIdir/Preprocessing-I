@@ -131,10 +131,20 @@ table {
   box-sizing: border-box;
 }
 html,
-<<<<<<< HEAD
 body {
-=======
-body { 
->>>>>>> 9666ab425a8738d5526666d288eaa560d7e59251
   height: 100%;
+}
+table,
+th,
+td {
+  border: 1px solid black;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  max-width: 800px;
+  margin: 0 auto;
+}
+.mypic img {
+  max-width: 200px;
 }
