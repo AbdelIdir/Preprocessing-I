@@ -152,17 +152,20 @@ td {
   margin: 0 auto;
 }
 .part.one {
+  width: 100%;
   background: #EAECEF;
 }
 .bar {
   width: 100%;
   background-color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
 }
 .bar .top {
-  width: 2 display: flex; flex-direction: row;;
-  justify-content: flex-end;
-  width: 100%;
-  justify-content: space-around;
+  display: flex;
+  width: 20rem;
+  justify-content: space-between;
 }
 .mypic img {
   max-width: 200px;
