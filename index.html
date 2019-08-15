@@ -24,27 +24,28 @@
           <a>Home</a>
           <a>About</a>
           <a>Portfolio</a>
-          <a>Contact</a>
+          <a href="#contactme">Contact</a>
 
         </nav>
 
       </div>
 
       <header class=" present">
-        <div class="pictext">
 
-          <div class="mypic">
-            <img src="/images/software-en.jpg" alt="picture of a software engineer">
-          </div>
-          <div class="presenttetxt">
-            <h1>John Thomson 高帅</h1>
-            <p>I specialize in cryptocurrencies and blockchain technologies.</p>
-          </div>
+
+        <div class="mypic">
+          <img class="pho" src="/images/software-en.jpg" alt="picture of a software engineer">
+        </div>
+        <div class="presenttetxt">
+          <h1 class="name">John Thomson 高帅 - Blockchain Engineer</h1><br>
+          <p>I specialize in cryptocurrencies and blockchain technologies.</p>
+        </div>
 
       </header>
       <div class="pagedescribe">
-        <p>My team is ready to work globally and partner up with relevant companies in the industry.</p>
-        <button>Let's cooperate</button>
+        <p class="descriptor">My team is ready to work globally and partner up with relevant companies in the industry.
+        </p>
+        <button class="cooperate">Let's cooperate</button>
       </div>
 
     </div>
@@ -54,81 +55,108 @@
 
       <div class="bitc-crypt">
         <div class="bitc">
-          <h2>BLockchain...</h2>
-          <p>A blockchain is a decentralized, distributed and public digital ledger that is used to record transactions
+          <h2 class="blockh">Blockchain...</h2>
+          <p class="bloctext">A blockchain is a decentralized, distributed and public digital ledger that is used to
+            record transactions
             across many computers so that any involved record cannot be altered retroactively, without the alteration of
             all subsequent blocks.
             The blockchain is an undeniably ingenious invention – the brainchild of a person or group of people known by
-            the pseudonym, Satoshi Nakamoto. But since then, it has evolved into something greater, and the main
-            question every single person is asking is: What is Blockchain?
-
-            By allowing digital information to be distributed but not copied, blockchain technology created the backbone
-            of a new type of internet. Originally devised for the digital currency, Bitcoin, (Buy Bitcoin) the tech
-            community has now found other potential uses for the technology.
+            the pseudonym, Satoshi Nakamoto. But since then, it has evolved into something greater
           </p>
 
         </div>
-        <div class="stuff"></div>
-        <p>Cryptocurrencies I've worked with:</p>
-        <table class="demo">
+        <div class="crypt">
+          <h2 class="cryptotext">Cryptocurrencies I've worked with:</h2>
+          <table class="demo">
 
-          <tr>
-            <td>Bitcoin</td>
-          </tr>
+            <tr>
+              <td>Bitcoin</td>
+            </tr>
 
-          <tr>
-            <td>Etherum</td>
-          </tr>
-          <tr>
-            <td>Ripple</td>
-          </tr>
-          <tr>
-            <td>XRP</td>
-          </tr>
-          <tr>
-            <td>Bitcoin Cash</td>
-          </tr>
-        </table>
+            <tr>
+              <td>Etherum</td>
+            </tr>
+            <tr>
+              <td>Ripple</td>
+            </tr>
+            <tr>
+              <td>XRP</td>
+            </tr>
+            <tr>
+              <td>Bitcoin Cash</td>
+            </tr>
+          </table>
 
+        </div>
       </div>
+
+      <h2 class="workh">Work history</h2>
+
       <div class="historytable">
 
         <table class="GeneratedTable">
           <thead>
             <tr>
-              <th>Header Cell 1</th>
-              <th>Header Cell 2</th>
-              <th>Header Cell 3</th>
-              <th>Header Cell 4</th>
+              <th>Years</th>
+              <th>Company</th>
+              <th>Title</th>
+              <th>Tech Used</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td>Row 1, Cell 1</td>
-              <td>Row 1, Cell 2</td>
-              <td>Row 1, Cell 3</td>
-              <td>Row 1, Cell 4</td>
+              <td> 2</td>
+              <td>Apple</td>
+              <td>Lead Engineer</td>
+              <td>Javascript</td>
             </tr>
             <tr>
-              <td>Row 2, Cell 1</td>
-              <td>Row 2, Cell 2</td>
-              <td>Row 2, Cell 3</td>
-              <td>Row 2, Cell 4</td>
+              <td>4</td>
+              <td>Google</td>
+              <td>Creative dept</td>
+              <td>Python</td>
             </tr>
             <tr>
-              <td>Row 3, Cell 1</td>
-              <td>Row 3, Cell 2</td>
-              <td>Row 3, Cell 3</td>
-              <td>Row 3, Cell 4</td>
+              <td>6</td>
+              <td>Amazon</td>
+              <td>Blockchain engineer</td>
+              <td>React</td>
             </tr>
           </tbody>
         </table>
-
       </div>
-    </div>
-    <footer>Block Future Inc 2019</footer>
 
-  </div>
+      <hr>
+
+      <h3><a name="contactme">Don't be a stranger : </a></h3>
+
+      <div class="container">
+        <form action="/action_page.php">
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+          <label for="lname">Last Name</label>
+          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+          <label for="country">Country</label>
+          <select id="country" name="country">
+            <option value="australia">Australia</option>
+            <option value="canada">Canada</option>
+            <option value="usa">USA</option>
+          </select>
+
+          <label for="subject">Subject</label>
+          <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+          <input type="submit" value="Submit">
+        </form>
+      </div>
+
+      <footer>
+        <p class="footertext">Block Future Inc 2019</p>
+      </footer>
+
+    </div>
 
 </body>
 
