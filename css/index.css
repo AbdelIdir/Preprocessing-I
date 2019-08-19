@@ -1,1 +1,323 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+table,
+th,
+td {
+  padding: 10px;
+  border: 1px solid black;
+}
+:root {
+  font-size: 100%;
+}
+@media (max-width: 500px) {
+  :root {
+    font-size: 150%;
+  }
+}
+.wrapper {
+  max-height: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+.wrapper .part.one {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: #EAECEF;
+}
+.wrapper .part.one .bar {
+  width: 100%;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+}
+.wrapper .part.one .bar .top {
+  display: flex;
+  width: 20rem;
+  justify-content: space-between;
+}
+.present {
+  display: flex;
+  flex-direction: column;
+  padding-left: 1.375rem;
+  border-bottom: 2px solid #D8DADD;
+  margin-left: 9px;
+  margin-right: 9px;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+.present .pho {
+  padding-top: 1.25rem;
+  width: 220px;
+  height: 200px;
+}
+.present .presenttetxt .name {
+  color: red;
+  font-size: 35px;
+  padding-top: 15px;
+}
+.pagedescribe {
+  padding-top: 1.25rem;
+  padding-left: 29px;
+  padding-bottom: 45px;
+}
+.pagedescribe .descriptor {
+  padding-bottom: 0.75rem;
+}
+.pagedescribe .cooperate {
+  background: #808080;
+  font-size: 1.25rem;
+  padding: 5px;
+  color: white;
+}
+.part.two {
+  padding-top: 35px;
+}
+.part.two .bitc-crypt {
+  justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 23px;
+}
+@media screen and (max-width: 500px) {
+  .part.two .bitc-crypt {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-bottom: 1.25rem;
+    margin-bottom: 30px;
+    border-bottom: 2px solid blueviolet;
+  }
+}
+.part.two .bitc-crypt .bitc {
+  width: 50%;
+}
+@media screen and (max-width: 500px) {
+  .part.two .bitc-crypt .bitc {
+    width: 100%;
+    padding-bottom: 1.25rem;
+    margin-bottom: 30px;
+    border-bottom: 2px solid blueviolet;
+  }
+}
+.part.two .bitc-crypt .bitc .bloctext {
+  padding-top: 10px;
+}
+.cryptotext {
+  font-size: 22px;
+  padding-bottom: 7px;
+  font-weight: bold;
+}
+.demo {
+  border: 1px solid #C0C0C0;
+  border-collapse: collapse;
+  padding: 5px;
+}
+.demo th {
+  border: 1px solid #C0C0C0;
+  padding: 5px;
+  background: #F0F0F0;
+}
+.demo td {
+  border: 1px solid #C0C0C0;
+  padding: 5px;
+  width: 380px;
+}
+h2 {
+  font-size: 22px;
+  font-weight: bold;
+}
+.workh {
+  font-weight: bold;
+  padding-bottom: 1.25rem;
+}
+.blockch {
+  font-weight: bold;
+}
+footer {
+  color: white;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  padding: 20px 0 30px 0;
+  background: #808080;
+}
+.GeneratedTable {
+  width: 100%;
+  background: #F2F2F2;
+}
+.GeneratedTable td {
+  background: white;
+}
+input[type=text],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 1.25rem;
+}
+h3 {
+  font-weight: bold;
+  padding-top: 30px;
+  padding-bottom: 1.25rem;
+  font-size: 20px;
+}
